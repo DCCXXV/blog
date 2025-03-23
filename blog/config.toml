@@ -6,7 +6,7 @@ showThemeNotice = true
 
 [params]
 theme = "dark"
-palette = "oscura"
+palette = "catpuccin"
 
 [[menu.main]]
   identifier = "about"
