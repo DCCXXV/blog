@@ -1,0 +1,30 @@
+baseURL = 'https://dccxxv.dev/'
+languageCode = 'es-es'
+title = 'Blog de DCCXXV'
+theme = 'not-much'
+showThemeNotice = true
+
+[params]
+theme = "dark"
+palette = "oscura"
+
+[[menu.main]]
+  identifier = "about"
+  name = "about"
+  title = "About"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "posts"
+  name = "posts"
+  title = "Posts"
+  url = "/posts"
+  weight = 2
+
+[[menu.main]]
+  identifier = "github"
+  name = "github"
+  title = "GitHub"
+  url = "https://github.com/DCCXXV"
+  weight = 3
