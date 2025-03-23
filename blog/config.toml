@@ -23,9 +23,9 @@ palette = "catpuccin"
 
 
 [[menu.main]]
-  identifier = "posts"
-  name = "posts"
-  title = "Posts"
+  identifier = "publicaciones"
+  name = "publicaciones"
+  title = "Publicaciones"
   url = "/posts"
   weight = 3
 

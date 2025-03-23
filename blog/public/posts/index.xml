@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Blog de DCCXXV</title>
+    <title>Blog de DCCXXV</title>
     <link>https://dccxxv.dev/posts/</link>
-    <description>Recent content in Posts on Blog de DCCXXV</description>
+    <description>Recent content on Blog de DCCXXV</description>
     <generator>Hugo</generator>
     <language>es-es</language>
     <lastBuildDate>Sun, 23 Mar 2025 02:05:21 +0100</lastBuildDate>
