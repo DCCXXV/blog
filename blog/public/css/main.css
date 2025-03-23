@@ -15,6 +15,13 @@ body, main {
   color: var(--font-color) !important;
 }
 
+p {
+  hyphenate-limit-chars: 7;
+  hyphens: auto;
+  text-align: justify;
+  text-wrap: pretty;
+}
+
 ::selection {
   background: var(--secondary);
   color: black;

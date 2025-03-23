@@ -15,15 +15,14 @@ palette = "catpuccin"
   weight = 1
 
 [[menu.main]]
-  identifier = "sobre mi"
+  identifier = "about"
   name = "sobre mí"
   title = "Sobre mí"
   url = "/about"
   weight = 2
 
-
 [[menu.main]]
-  identifier = "publicaciones"
+  identifier = "posts"
   name = "publicaciones"
   title = "Publicaciones"
   url = "/posts"
