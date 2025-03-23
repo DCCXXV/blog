@@ -2,11 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Blog de DCCXXV</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://dccxxv.dev/posts/</link>
     <description>Recent content in Posts on Blog de DCCXXV</description>
     <generator>Hugo</generator>
     <language>es-es</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Mar 2025 02:05:21 +0100</lastBuildDate>
+    <atom:link href="https://dccxxv.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mi Primer Post</title>
+      <link>https://dccxxv.dev/posts/mi-primer-post/</link>
+      <pubDate>Sun, 23 Mar 2025 02:05:21 +0100</pubDate>
+      <guid>https://dccxxv.dev/posts/mi-primer-post/</guid>
+      <description>¡Bienvenido a mi blog! Esto solo es una prueba. Pronto estaré compartiendo contenido interesante, así que mantente atento a las próximas publicaciones.</description>
+    </item>
   </channel>
 </rss>
