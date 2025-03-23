@@ -10,8 +10,8 @@ Si te interesan lenguajes como *Java*, *Go*, o tecnologías modernas como *HTMX*
 
 ¡Gracias por pasarte por aquí!
 ```
-                         ╱|、
-                        (˚ˎ 。7  
-                        |、˜〵          
-                        じしˍ,)ノ
+                             ╱|、
+                            (˚ˎ 。7  
+                            |、˜〵          
+                            じしˍ,)ノ
 ```

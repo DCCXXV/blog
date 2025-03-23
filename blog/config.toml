@@ -9,22 +9,29 @@ theme = "dark"
 palette = "catpuccin"
 
 [[menu.main]]
-  identifier = "about"
-  name = "about"
-  title = "About"
+  identifier = "inicio"
+  name = "inicio"
   url = "/"
   weight = 1
+
+[[menu.main]]
+  identifier = "sobre mi"
+  name = "sobre mí"
+  title = "Sobre mí"
+  url = "/about"
+  weight = 2
+
 
 [[menu.main]]
   identifier = "posts"
   name = "posts"
   title = "Posts"
   url = "/posts"
-  weight = 2
+  weight = 3
 
 [[menu.main]]
   identifier = "github"
   name = "github"
   title = "GitHub"
   url = "https://github.com/DCCXXV"
-  weight = 3
+  weight = 4
