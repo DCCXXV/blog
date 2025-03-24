@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es-es" dir="ltr">
+<head>
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://dccxxv.dev/favicon.ico" />
+<meta property="og:url" content="https://dccxxv.dev/posts/como-consigo-textos-bonitos-en-mi-blog/">
+  <meta property="og:site_name" content="Blog de DCCXXV">
+  <meta property="og:title" content="Como Consigo Textos Bonitos en mi Blog">
+  <meta property="og:description" content="Puede que te hayas dado cuenta al entrar en mi blog de que mi texto es un poco diferente: está justificado correctamente, las palabras no se cortan de forma extraña y, en general, es más agradable a la vista. Aunque parezca una tontería, esto hasta hace poco era muy difícil de hacer correctamente y es por esto que rara vez se ven textos justificados en la web.
+Pero ya no hay excusa desde la última versión de CSS esto es ahora muy sencillo.">
+  <meta property="og:locale" content="es_es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-24T22:50:56+01:00">
+    <meta property="article:modified_time" content="2025-03-24T22:50:56+01:00">
+
+<title>Blog de DCCXXV | Como Consigo Textos Bonitos en mi Blog</title>
+
+      <link rel="stylesheet" href="/css/main.min.d38ee9c4317d3f1c4f9e1ea52561205be10acfdf96e651d318d1b4ea9b32c2c0.css" integrity="sha256-047pxDF9PxxPnh6lJWEgW&#43;EKz9&#43;W5lHTGNG06psywsA=" crossorigin="anonymous">
+  
+        <link rel="stylesheet" href="/css/palette/catpuccin.min.a6f1bd4508a6b97805eeaaeb50fc8c575ad5fa2c430125dd9d003f2ea254600d.css" integrity="sha256-pvG9RQimuXgF7qrrUPyMV1rV&#43;ixDASXdnQA/LqJUYA0=" crossorigin="anonymous">
+
+      <script src="/js/main.86bb3d8e6f46df0fc97c2731e6b99175a13b87a4086acf578ff9b6992fcf32c1.js" integrity="sha256-hrs9jm9G3w/JfCcx5rmRdaE7h6QIas9Xj/m2mS/PMsE=" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+  
+<body
+    class="dark"
+>
+  
+  <main>
+    
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      
+  <nav aria-label="breadcrumb" class="small">
+    <ol class="breadcrumb fw-bold">
+    <li class="breadcrumb-item">
+      <a href="/"
+        
+      >inicio</a>
+      
+    </li>
+    <li class="breadcrumb-item">
+      <a href="/about"
+        
+      >sobre mí</a>
+      
+    </li>
+    <li class="breadcrumb-item">
+      <a href="/posts"
+        class="text-decoration-underline link-offset-3"
+        
+      >publicaciones</a>
+      
+    </li>
+    <li class="breadcrumb-item">
+      <a href="https://github.com/DCCXXV"
+        
+          target="_blank" rel="noopener noreferrer"
+        
+      >github</a>
+      
+    </li>
+    </ol>
+  </nav>
+
+    </div>
+    
+    <div class="post">
+      <header class="mb-4">
+        <h1 class="text-uppercase">Como Consigo Textos Bonitos en mi Blog</h1>
+        
+        
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item small">
+              <time datetime="2025-03-24T22:50:56&#43;01:00">March 24, 2025</time>
+            </li>
+            <li class="breadcrumb-item small">
+              2 minutes
+            </li>
+          </ol>
+        </div>
+      </header>
+      <article>
+        <p>Puede que te hayas dado cuenta al entrar en mi blog de que mi texto es un poco diferente: está justificado correctamente, las palabras no se cortan de forma extraña y, en general, es más agradable a la vista. Aunque parezca una tontería, esto hasta hace poco era muy difícil de hacer correctamente y es por esto que rara vez se ven textos justificados en la <em>web</em>.</p>
+<p>Pero ya no hay excusa desde la última versión de CSS esto es ahora muy sencillo. A continuación muestro el único CSS necesario para tener párrafos bien justificados.</p>
+<div class="highlight"><pre tabindex="0" style="color:#cad3f5;background-color:#24273a;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#c6a0f6">p</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#c6a0f6">hyphens</span>: <span style="color:#f5a97f">auto</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#c6a0f6">hyphenate-limit-chars</span>: <span style="color:#f5a97f">7</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#c6a0f6">text-align</span>: <span style="color:#f5a97f">justify</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#c6a0f6">text-wrap</span>: pretty;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>(Sí, es solo esto)</p>
+<p>Línea por línea:</p>
+<ul>
+<li><code>hyphens: auto</code>: Divide palabras largas para evitar desbordamientos y mejorar la legibilidad. Sin esta propiedad, los textos justificados pueden tener espacios irregulares y verse desordenados.</li>
+<li><code>hyphenate-limit-chars: 7</code>: Evita cortar palabras cortas, que suelen verse mal cuando se dividen. Yo he encontrado que con 7 es como más me gusta, pero puedes ajustarlo según tus preferencias.</li>
+<li><code>text-align: justify</code>: Justifica el texto, creando líneas de igual longitud. Esto da un aspecto más formal y pulido al texto.</li>
+<li><code>text-wrap: pretty</code>: (Experimental) Intenta evitar cortes de línea feos.</li>
+</ul>
+<p>Es importante anotar que <code>text-wrap: pretty</code>, al ser todavía experimental por ser tan reciente, no funciona en todos los búscadores, según <a href="https://caniuse.com/?search=text-wrap%3A%20pretty%3B">Can I use</a> solo funciona en búscadores basados en <em>chromium</em>, y no en <em>firefox</em> o <em>safari</em>, por lo que para casos más formales sería mejor no usarlo todavía.</p>
+<p><strong>¿Qué busca mejorar <code>text-wrap: pretty</code>?</strong></p>
+<p>Evita que una única palabra quede al final de un párrafo o al inicio de una página. Reduce los guiones innecesarios, sobre todo en palabras cortas. Además, intenta que todas las líneas tengan una longitud similar. Y por último y lo más importante, rompe las líneas donde naturalmente harías una pausa al hablar (tras comas, puntos, etc.) por lo que queda un resultado mucho más natural.</p>
+<p>Espero que les haya sido útil y puedan aprovecharlo en su próximo proyecto.</p>
+
+      </article>
+      
+
+      <div class="row">
+    <div class="col-md">
+        
+        <a href="https://dccxxv.dev/posts/mi-primer-post/">
+            <span>previo: </span>
+            <span>Hello World!</span>
+        </a>
+        
+    </div>
+    <div class="col-md text-md-end">
+        
+    </div>
+</div>
+    </div>
+  </div>
+  <footer>
+    <div class="container mt-4 pb-1">
+    <p class="small opacity-75">
+        
+        
+    </p>
+</div>
+
+  </footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

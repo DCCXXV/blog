@@ -3,6 +3,14 @@ languageCode = 'es-es'
 title = 'Blog de DCCXXV'
 theme = 'not-much'
 showThemeNotice = true
+showPostsSummary = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "catppuccin-macchiato"
 
 [params]
 theme = "dark"
