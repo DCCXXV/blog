@@ -1,6 +1,7 @@
 +++
 title = 'Como Consigo Textos Bonitos en mi Blog'
 date = 2025-03-24T22:50:56+01:00
+tags = ["programación", "css"]
 draft = false
 +++
 

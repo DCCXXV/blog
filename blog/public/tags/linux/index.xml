@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Blog de DCCXXV</title>
+    <link>https://dccxxv.dev/tags/linux/</link>
+    <description>Recent content in Linux on Blog de DCCXXV</description>
+    <generator>Hugo</generator>
+    <language>es-es</language>
+    <lastBuildDate>Fri, 28 Mar 2025 18:03:48 +0100</lastBuildDate>
+    <atom:link href="https://dccxxv.dev/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mi Experiencia en el «III Concurso De Programación En Bash»</title>
+      <link>https://dccxxv.dev/posts/mi-experiencia-en-el-iii-concurso-de-programaci%C3%B3n-en-bash/</link>
+      <pubDate>Fri, 28 Mar 2025 18:03:48 +0100</pubDate>
+      <guid>https://dccxxv.dev/posts/mi-experiencia-en-el-iii-concurso-de-programaci%C3%B3n-en-bash/</guid>
+      <description>El III Concurso de programación en bash es la tercera edición de un concurso de Bash scripting que se realiza en la Facultad de Informática de la UCM, en el que se proponen una serie de problemas muy variados a resolver usando diversos comandos de GNU/Linux y las diferentes herramientas de Bash.&#xA;Aunque llevo usando Linux desde que empecé la universidad, la verdad es que mis conocimientos específicos de scripting en Bash antes de empezar a prepararme para esto eran escasos.</description>
+    </item>
+  </channel>
+</rss>
