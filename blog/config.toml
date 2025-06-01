@@ -10,11 +10,11 @@ showPostsSummary = true
     [markup.goldmark.renderer]
       unsafe = true
   [markup.highlight]
-    style = "catppuccin-mocha"
+    style = "vim"
 
 [params]
 theme = "dark"
-palette = "catpuccin"
+palette = "vim"
 
 [[menu.main]]
   identifier = "inicio"
