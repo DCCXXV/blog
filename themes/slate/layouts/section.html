@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main class="main">
+  <header class="main-header">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </header>
+  <div class="project-list">
+    {{ range .Pages }}
+    <div class="preview" data-year="{{ .Date.Format "2006" }}">
+        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+        {{ .Summary }}
+    </div>
+    {{ end }}
+  </div>
+</main>
+{{ end }}

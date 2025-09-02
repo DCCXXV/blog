@@ -1,0 +1,19 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-US'
+title = 'My New Hugo Site'
+
+[menus]
+[[menus.main]]
+name = 'About'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Projects'
+pageRef = '/posts'
+weight = 20
+
+[module]
+[module.hugoVersion]
+extended = false
+min = '0.146.0'

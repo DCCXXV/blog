@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "ibm_plex_monoregular";
+    src:
+        url("/fonts/ibmplexmono-regular-webfont.woff2") format("woff2"),
+        url("/fonts/ibmplexmono-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ibm_plex_monolight";
+    src:
+        url("/fonts/ibmplexmono-light-webfont.woff2") format("woff2"),
+        url("/fonts/ibmplexmono-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ibm_plex_monosemibold";
+    src:
+        url("/fonts/ibmplexmono-semibold-webfont.woff2") format("woff2"),
+        url("/fonts/ibmplexmono-semibold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ibm_plex_sanslight";
+    src:
+        url("/fonts/ibmplexsans-light-webfont.woff2") format("woff2"),
+        url("/fonts/ibmplexsans-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+p:last-child,
+footer p:last-child,
+footer *:last-child {
+    margin-bottom: 0;
+}
+
+.site-title {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.site-title::after {
+    content: "";
+    flex: 1;
+    height: 1rem;
+    background: linear-gradient(
+        to bottom,
+        #acafc0 0px,
+        #acafc0 2px,
+        transparent 2px,
+        transparent 4px,
+        #acafc0 4px,
+        #acafc0 6px,
+        transparent 5px,
+        transparent 7px,
+        #acafc0 7px,
+        #acafc0 9px
+    );
+    margin-left: 0.5em;
+}
+
+body {
+    background: #f8f9fa;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='20' height='20' fill='%23f1f3f4'/%3E%3Crect x='20' y='20' width='20' height='20' fill='%23f1f3f4'/%3E%3C/svg%3E");
+    background-size: 40px 40px;
+    margin: 2rem 1rem;
+}
+
+#main {
+    border: 2px solid #acafc0;
+    background-color: #dfe0e8;
+    color: #252528;
+
+    font-family: "ibm_plex_sanslight", sans;
+    font-size: 0.85rem;
+    font-weight: lighter;
+    line-height: 1.5;
+
+    max-width: 768px;
+    padding: 0.75rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+#main::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    bottom: -8px;
+    right: -8px;
+    background-color: #c5c8d1;
+    border: 2px solid #9ca0b0;
+    z-index: -1;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+footer {
+    border-top: 2px dotted #9ca0b0;
+    margin-top: 1rem;
+    color: #6b6d7f;
+    font-weight: 200;
+}
+
+a {
+    font-weight: 600;
+    color: #6b6d7f;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav a {
+    padding: 0 3rem;
+    border: 2px dotted #acafc0;
+}
+
+.preview {
+    border: 2px dotted #acafc0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+nav ul li a.active {
+    background-color: #acafc0;
+}
+
+img {
+    border: 2px solid #acafc0;
+}
+
+img::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    bottom: -8px;
+    right: -8px;
+    background-color: #c5c8d1;
+    border: 2px solid #9ca0b0;
+    z-index: -1;
+}
