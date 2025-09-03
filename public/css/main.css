@@ -1,3 +1,11 @@
+html {
+    height: 100%;
+    margin: 0;
+    cursor:
+        url("/cursors/Pointer.png") 0 0,
+        default;
+}
+
 body {
     font-family: "Noto Sans", sans-serif;
     background: #336698;
@@ -30,9 +38,12 @@ nav ul {
 nav li {
     border: 1px solid #babcb9;
     background: linear-gradient(#f6f6f6, #dbdbdb);
-    padding: 5px 10px 5px 20px;
+    padding: 5px 22px 5px 20px;
     font-weight: bold;
     position: relative;
+    cursor:
+        url("/cursors/haiku-link.png") 0 0,
+        pointer;
 }
 
 nav li::before {
@@ -53,6 +64,9 @@ nav a {
     color: #010100;
     padding: 5px 8px;
     border-radius: 3px;
+    cursor:
+        url("/cursors/haiku-link.png") 0 0,
+        pointer;
 }
 
 nav li:has(> a.active) {
@@ -63,6 +77,33 @@ nav li:has(> a.active) {
 nav li:has(> a.active)::before {
     background: linear-gradient(#ffea9c, #ffcf13);
     border: 2px solid #cfa707;
+}
+
+nav a.active::after {
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border: 2px solid #cfa707;
+    background: linear-gradient(#ffea9c, #ffcf13);
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+nav a.active::before {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: calc(50% - 10px);
+    width: 10px;
+    height: 10px;
+    border: 2px solid #cfa707;
+    background: linear-gradient(#ffea9c, #ffcf13);
+    box-sizing: border-box;
+    z-index: 1;
 }
 
 nav li ul {
@@ -83,6 +124,22 @@ nav li:hover ul {
 main {
     background: #fefffc;
     padding: 0 4px;
+}
+
+main p,
+main span,
+main li,
+main td,
+main th,
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+    cursor:
+        url("/cursors/haiku-beam.png") 8 8,
+        text;
 }
 
 footer {
