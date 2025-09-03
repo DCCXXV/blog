@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <h2>{{ .Title }}</h2>
+
+  {{ $year := .Date | time.Format "2006" }}
+  <time datetime="{{ .Date }}">{{ $year }}</time>
+
+  {{ .Content }}
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}

@@ -26,4 +26,4 @@ Here are the main technologies and tools I have experience with and feel most co
   </tbody>
 </table>
 
-Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/marco-antonio-p%C3%A9rez-neira-562b42342/) or [X/Twitter](https://www.linkedin.com/in/marco-antonio-p%C3%A9rez-neira-562b42342/).
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/marco-antonio-p%C3%A9rez-neira-562b42342/) or [X/Twitter](https://x.com/DCCXXV_).
