@@ -1,7 +1,16 @@
 {{ define "main" }}
-  {{ .Content }}
-  {{ range .Pages }}
-    <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
-    {{ .Summary }}
-  {{ end }}
+    {{ .Content }}
+    {{ range .Pages }}
+        <div class="section-card">
+            {{ with .Resources.GetMatch "*.png" }}
+              <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="section-thumb">
+            {{ end }}
+            <div class="section-text">
+                <h4><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h4>
+                {{ with .Params.description }}
+                    <p>{{ . }}</p>
+                {{ end }}
+            </div>
+        </div>
+    {{ end }}
 {{ end }}

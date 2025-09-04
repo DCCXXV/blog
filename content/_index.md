@@ -1,4 +1,4 @@
-Hi! I'm **Marco Antonio** and I am a 4th year software engineer **student** at Universidad Complutense de Madrid.
+Hi! I'm **Marco Antonio** and I am a final-year Software Engineering **student** at Universidad Complutense de Madrid.
 
 I’m passionate about **web development**, **backend systems** and **open-source software**.
 Currently, I’m learning **Go (Golang)** and deepening my knowledge of **modern web technologies**.

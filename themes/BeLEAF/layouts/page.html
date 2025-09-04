@@ -1,9 +1,12 @@
 {{ define "main" }}
-  <h2>{{ .Title }}</h2>
-
-  {{ $year := .Date | time.Format "2006" }}
-  <time datetime="{{ .Date }}">{{ $year }}</time>
-
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    <div class="page-title">
+        <a href="{{ .CurrentSection.RelPermalink }}">
+          <img src="/icons/goback.png" alt="Back" style="border: 0;">
+        </a>
+        <h2><u>{{ .Title }}</u></h2>
+    </div>
+    {{ .Content }}
+    {{ $year := .Date | time.Format "2006" }}
+    <time datetime="{{ .Date }}">{{ $year }}</time>
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 {{ end }}
