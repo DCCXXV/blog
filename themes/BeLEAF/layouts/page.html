@@ -6,7 +6,9 @@
         <h2><u>{{ .Title }}</u></h2>
     </div>
     {{ .Content }}
+    <!--
     {{ $year := .Date | time.Format "2006" }}
     <time datetime="{{ .Date }}">{{ $year }}</time>
+    -->
     {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 {{ end }}
