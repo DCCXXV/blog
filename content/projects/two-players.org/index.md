@@ -11,7 +11,7 @@ description = "A small web app for playing combinatorial games online, created w
 - Real-time gameplay with WebSockets
 - Clean and responsive interface
 
-![A match of tic-tac-toe in two-players.org](tic-tac-toe.png)
+![A match of tic-tac-toe in two-players.org](tic-tac-toe.webp)
 
 ### Tech Stack
 - **Backend:** Go, PostgreSQL, WebSockets, sqlc, go-migrate
