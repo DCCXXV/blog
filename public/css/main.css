@@ -1,3 +1,28 @@
+:root {
+    --color-body-bg: #336698;
+    --color-window-bg: #e4e4e4;
+    --color-content-bg: #fefffc;
+    --color-text-main: #010100;
+    --color-text-muted: #333;
+    --color-border-light: #ccc;
+    --color-border-default: #babcb9;
+    --color-border-section: #dbdbdb;
+    --color-border-submenu: #aaa;
+    --color-border-nav-active: #cfa707;
+    --color-panel-light: #f6f6f6;
+    --color-panel-dark: #dbdbdb;
+    --color-submenu-bg: #ececec;
+    --color-nav-active-light: #ffea9c;
+    --color-nav-active-dark: #ffcf13;
+    --color-selection-bg: #ffea9c;
+    --color-selection-text: #010100;
+    --color-table-header-bg: #f6f6f6;
+    --color-section-bg: #f6f6f6;
+    --color-blockquote-border: #ffcf13;
+    --color-blockquote-bg: #ffea9c;
+    --color-blockquote-text: #333;
+}
+
 /* global styles */
 html {
     height: 100%;
@@ -11,11 +36,11 @@ body {
     max-width: 768px;
     margin: 2rem auto;
     font-family: "Noto Sans", sans-serif;
-    background: #336698;
+    background: var(--color-body-bg);
 }
 
 img {
-    border: 4px outset #ccc;
+    border: 4px outset var(--color-border-light);
     display: block;
     width: 94%;
     margin: 0 auto;
@@ -28,25 +53,25 @@ a {
 }
 
 ::selection {
-    background: #ffea9c;
-    color: #010100;
+    background: var(--color-selection-bg);
+    color: var(--color-selection-text);
 }
 
 /* main layout */
 #window {
     padding: 3px;
-    border: 2px outset #babcb9;
-    background: #e4e4e4;
+    border: 2px outset var(--color-border-default);
+    background: var(--color-window-bg);
 }
 
 #window-content {
-    border: 2px solid #babcb9;
-    background: #fefffc;
+    border: 2px solid var(--color-border-default);
+    background: var(--color-content-bg);
 }
 
 main {
     padding: 0 4px;
-    background: #fefffc;
+    background: var(--color-content-bg);
 }
 
 main p,
@@ -67,9 +92,12 @@ main h6 {
 
 footer {
     padding: 4px;
-    border-top: 2px solid #babcb9;
+    border-top: 2px solid var(--color-border-default);
     line-height: 0.25;
-    background: linear-gradient(#f6f6f6, #dbdbdb);
+    background: linear-gradient(
+        var(--color-panel-light),
+        var(--color-panel-dark)
+    );
     user-select: none;
 }
 
@@ -88,10 +116,13 @@ nav ul {
 nav li {
     position: relative;
     padding: 5px 22px 5px 20px;
-    border: 1px solid #babcb9;
+    border: 1px solid var(--color-border-default);
     border-bottom: 0;
     font-weight: bold;
-    background: linear-gradient(#f6f6f6, #dbdbdb);
+    background: linear-gradient(
+        var(--color-panel-light),
+        var(--color-panel-dark)
+    );
     cursor:
         url("/cursors/haiku-link.png") 0 0,
         pointer;
@@ -106,14 +137,17 @@ nav li::before {
     width: 16px;
     height: 16px;
     box-sizing: border-box;
-    border: 2px solid #babcb9;
-    background: linear-gradient(#f6f6f6, #dbdbdb);
+    border: 2px solid var(--color-border-default);
+    background: linear-gradient(
+        var(--color-panel-light),
+        var(--color-panel-dark)
+    );
 }
 
 nav a {
     padding: 5px 8px;
     border-radius: 3px;
-    color: #010100;
+    color: var(--color-text-main);
     text-decoration: none;
     cursor:
         url("/cursors/haiku-link.png") 0 0,
@@ -122,14 +156,20 @@ nav a {
 
 /* navigation states */
 nav li:has(> a.active) {
-    border: 1px solid #cfa707;
+    border: 1px solid var(--color-border-nav-active);
     border-bottom: 0;
-    background: linear-gradient(#ffea9c, #ffcf13);
+    background: linear-gradient(
+        var(--color-nav-active-light),
+        var(--color-nav-active-dark)
+    );
 }
 
 nav li:has(> a.active)::before {
-    border: 2px solid #cfa707;
-    background: linear-gradient(#ffea9c, #ffcf13);
+    border: 2px solid var(--color-border-nav-active);
+    background: linear-gradient(
+        var(--color-nav-active-light),
+        var(--color-nav-active-dark)
+    );
 }
 
 nav a.active::before {
@@ -141,8 +181,11 @@ nav a.active::before {
     width: 10px;
     height: 10px;
     box-sizing: border-box;
-    border: 2px solid #cfa707;
-    background: linear-gradient(#ffea9c, #ffcf13);
+    border: 2px solid var(--color-border-nav-active);
+    background: linear-gradient(
+        var(--color-nav-active-light),
+        var(--color-nav-active-dark)
+    );
 }
 
 nav a.active::after {
@@ -155,8 +198,11 @@ nav a.active::after {
     width: 14px;
     height: 14px;
     box-sizing: border-box;
-    border: 2px solid #cfa707;
-    background: linear-gradient(#ffea9c, #ffcf13);
+    border: 2px solid var(--color-border-nav-active);
+    background: linear-gradient(
+        var(--color-nav-active-light),
+        var(--color-nav-active-dark)
+    );
 }
 
 /* navigation submenu */
@@ -167,8 +213,8 @@ nav li ul {
     left: 0;
     min-width: 150px;
     padding: 5px 0;
-    border: 1px solid #aaa;
-    background: #ececec;
+    border: 1px solid var(--color-border-submenu);
+    background: var(--color-submenu-bg);
 }
 
 nav li:hover ul {
@@ -195,20 +241,20 @@ table {
 table th,
 table td {
     padding: 6px 10px;
-    border: 1px solid #babcb9;
+    border: 1px solid var(--color-border-default);
     text-align: left;
 }
 
 table th {
     font-weight: bold;
-    background: #f6f6f6;
+    background: var(--color-table-header-bg);
 }
 
 .section-card {
     padding: 4px;
     margin-bottom: 4px;
-    border: 1px solid #dbdbdb;
-    background: #f6f6f6;
+    border: 1px solid var(--color-border-section);
+    background: var(--color-section-bg);
     display: flex;
     align-items: flex-start;
     gap: 0.5rem;
@@ -244,9 +290,9 @@ table th {
 blockquote {
     margin: 0 1em;
     padding: 1px 6px;
-    border-left: 4px solid #ffcf13;
-    background: #ffea9c;
-    color: #333;
+    border-left: 4px solid var(--color-blockquote-border);
+    background: var(--color-blockquote-bg);
+    color: var(--color-blockquote-text);
 }
 
 /* responsive styles */
@@ -266,13 +312,16 @@ blockquote {
 
     tr {
         margin-bottom: 1rem;
-        border: 1px solid #babcb9;
+        border: 1px solid var(--color-border-default);
     }
 
     td {
         padding: 0.25rem 0;
         border: none;
-        background: linear-gradient(#f6f6f6, #dbdbdb);
+        background: linear-gradient(
+            var(--color-panel-light),
+            var(--color-panel-dark)
+        );
     }
 
     td::before {
