@@ -205,6 +205,10 @@ nav a.active::after {
     );
 }
 
+nav li:hover {
+    filter: brightness(0.9);
+}
+
 /* navigation submenu */
 nav li ul {
     display: none;
